@@ -1,0 +1,13 @@
+{
+  "name": "RAG-11-EduBot",
+  "runtime": "docker",
+  "regions": ["us-west"],
+  "builder": {
+    "buildpacks": []
+  },
+  "deploy": {
+    "startCommand": "python api_server.py",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 10000
+  }
+}
